@@ -14,17 +14,18 @@ function MM_preloadImages() { //v3.0
     <TR>
       <TD width="509" align="Right">
         <div id="openseadragon1" style="width:508px;height:635px"></div>
-        <script src="/openseadragon/openseadragon.min.js"></script>
+        <script src="../../../openseadragon/openseadragon.min.js"></script>
         <script type="text/javascript">
           var viewer = OpenSeadragon({
             id: "openseadragon1",
-            prefixUrl: "/openseadragon/images/",
+            prefixUrl: "../../../openseadragon/images/",
+            showNavigator:  true,
             tileSources: [{
               //required
               type:       "zoomifytileservice",
               width:      3498,
               height:     2544,
-              tilesUrl:   "../../plates/Plate_BigMap",
+              tilesUrl:   "../../plates/Plate_BigMap/",
               //optional
               tileSize: 256,
               fileFormat: "jpg"
@@ -35,7 +36,7 @@ function MM_preloadImages() { //v3.0
       <TD width="337" align="Right"><img src="../jpg/help01.jpg" width="337" height="635" border="0" align="top" usemap="#Map" onload="MM_preloadImages('../jpg/help02.jpg','../jpg/pg01.jpg')"></TD>
     </TR>
   </TABLE>
-
+<p style="font-family:sans-serif;line-height:1.5em;padding:1em">Note: The original Flash viewer for these images has been replaced with <a href="https://openseadragon.github.io/">OpenSeadragon</a>, so the help text on this page is somewhat inaccurate. One key change is: To zoom out, press the Shift key while clicking.</p>
 </DIV>
 <map name="Map">
   <area shape="rect" coords="83,603,149,626" href="../../../index/1024x768/closing.html" target="_self" onFocus="if(this.blur)this.blur()">
