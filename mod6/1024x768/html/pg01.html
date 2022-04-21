@@ -1,1 +1,52 @@
-<HTML><title>Caltech Archives :: Documenting Earthquakes</title><script language="JavaScript" type="text/JavaScript"><!--function MM_preloadImages() { //v3.0  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}}function MM_openBrWindow(theURL,winName,features) { //v2.0  window.open(theURL,winName,features);}//--></script><BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="10" marginwidth="0" marginheight="0"><DIV ALIGN="center"></TABLE>  <TABLE WIDTH="846" height="635" BORDER=0 ALIGN="CENTER" CELLPADDING=0 CELLSPACING=0>    <TR>       <TD width="615" align="Right"> <Font size="1" face="arial" color="#000000"><img src="../jpg/pg01_wedgewood.jpg" width="508" height="635" border="0" align="top">         </Font> </TD>      <TD width="408" align="Right"><img src="../jpg/pg01.jpg" width="337" height="635" border="0" align="top" usemap="#Map" onload="MM_preloadImages('../jpg/pg02.jpg')"></TD>      </TABLE></DIV><map name="Map">  <area shape="rect" coords="298,604,327,627" href="pg02.html" target="_self" onFocus="if(this.blur)this.blur()">  <area shape="rect" coords="83,603,149,626" href="../../../index/1024x768/closing.html" target="_self" onFocus="if(this.blur)this.blur()">  <area shape="rect" coords="236,603,265,626" href="help01.html" target="_self" onFocus="if(this.blur)this.blur()">  <area shape="rect" coords="36,602,73,628" href="#" onFocus="if(this.blur)this.blur()" onClick="MM_openBrWindow('help01_pop.html','help','scrollbars=yes,resizable=yes,width=852,height=647')"></map></BODY></HTML>
+<HTML><title>Caltech Archives :: Documenting Earthquakes</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="10" marginwidth="0" marginheight="0">
+<DIV ALIGN="center">
+  <TABLE WIDTH="846" height="635" BORDER=0 ALIGN="CENTER" CELLPADDING=0 CELLSPACING=0>
+    <TR>
+      <TD width="615" align="Right">
+        <div id="openseadragon1" style="width:508px;height:635px"></div>
+        <script src="../../../openseadragon/openseadragon.min.js"></script>
+        <script type="text/javascript">
+          var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "../../../openseadragon/images/",
+            showNavigator:  true,
+            tileSources: [{
+              //required
+              type:       "zoomifytileservice",
+              width:      843,
+              height:     993,
+              tilesUrl:   "../../plates/Hamilton_Wedgewood/",
+              //optional
+              tileSize: 256,
+              fileFormat: "jpg"
+            }]
+          });
+        </script>
+
+      </TD>
+      <TD width="408" align="Right"><img src="../jpg/pg01.jpg" width="337" height="635" border="0" align="top" usemap="#Map" onload="MM_preloadImages('../jpg/pg02.jpg')"></TD>
+    </TR>
+  </TABLE>
+</DIV>
+<map name="Map">
+  <area shape="rect" coords="298,604,327,627" href="pg02.html" target="_self" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="83,603,149,626" href="../../../index/1024x768/closing.html" target="_self" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="236,603,265,626" href="help01.html" target="_self" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="36,602,73,628" href="#" onFocus="if(this.blur)this.blur()" onClick="MM_openBrWindow('help01_pop.html','help','scrollbars=yes,resizable=yes,width=852,height=647')">
+</map>
+</BODY>
+</HTML>

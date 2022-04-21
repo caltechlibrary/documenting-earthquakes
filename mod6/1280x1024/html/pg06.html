@@ -1,1 +1,51 @@
-<HTML><title>Caltech Archives :: Documenting Earthquakes</title><script language="JavaScript" type="text/JavaScript"><!--function MM_preloadImages() { //v3.0  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}}function MM_openBrWindow(theURL,winName,features) { //v2.0  window.open(theURL,winName,features);}//--></script><BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="10" marginwidth="0" marginheight="0"><DIV ALIGN="center"></TABLE>  <TABLE WIDTH="1024" height="768" BORDER=0 ALIGN="CENTER" CELLPADDING=0 CELLSPACING=0>    <TR>       <TD width="615" align="Right"> <Font size="1" face="arial" color="#000000">         <OBJECT CLASSID="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" CODEBASE="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" WIDTH="615" HEIGHT="768" ID="theMovie">          <PARAM NAME="FlashVars" VALUE="zoomifyImagePath=../../plates/Plate_VI">          <PARAM NAME="MENU" VALUE="FALSE">          <PARAM NAME="SRC" VALUE="zoomifyViewer.swf">          <EMBED FlashVars="zoomifyImagePath=../../plates/Plate_VI" SRC="zoomifyViewer.swf" MENU="false" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"  WIDTH="615" HEIGHT="768" NAME="theMovie" color="#000000"></EMBED>         </OBJECT>        </Font> </TD>      <TD width="408" align="Right"><img src="../jpg/pg06.jpg" width="408" height="768" border="0" align="top" usemap="#Map" onload="MM_preloadImages('../jpg/pg07.jpg')"></TD>      </TABLE></DIV><map name="Map">  <area shape="rect" coords="362,731,398,759" href="pg07.html" target="_self" onFocus="if(this.blur)this.blur()">  <area shape="rect" coords="101,730,181,758" href="../../../index/1280x1024/closing.html" target="_self" onFocus="if(this.blur)this.blur()">  <area shape="rect" coords="287,730,323,758" href="pg05.html" target="_self" onFocus="if(this.blur)this.blur()">  <area shape="rect" coords="44,729,89,760" href="#" onFocus="if(this.blur)this.blur()" onClick="MM_openBrWindow('help01_pop.html','help','scrollbars=yes,resizable=yes,width=1030,height=780')"></map></BODY></HTML>
+<HTML><title>Caltech Archives :: Documenting Earthquakes</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="10" marginwidth="0" marginheight="0">
+<DIV ALIGN="center">
+  <TABLE WIDTH="1024" height="768" BORDER=0 ALIGN="CENTER" CELLPADDING=0 CELLSPACING=0>
+    <TR>
+      <TD width="615" align="Right">
+        <div id="openseadragon1" style="width:615px;height:768px"></div>
+        <script src="../../../openseadragon/openseadragon.min.js"></script>
+        <script type="text/javascript">
+          var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "../../../openseadragon/images/",
+            showNavigator:  true,
+            tileSources: [{
+              //required
+              type:       "zoomifytileservice",
+              width:      2490,
+              height:     1315,
+              tilesUrl:   "../../plates/Plate_VI/",
+              //optional
+              tileSize: 256,
+              fileFormat: "jpg"
+            }]
+          });
+        </script>
+      </TD>
+      <TD width="408" align="Right"><img src="../jpg/pg06.jpg" width="408" height="768" border="0" align="top" usemap="#Map" onload="MM_preloadImages('../jpg/pg07.jpg')"></TD>
+    </TR>
+  </TABLE>
+</DIV>
+<map name="Map">
+  <area shape="rect" coords="362,731,398,759" href="pg07.html" target="_self" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="101,730,181,758" href="../../../index/1280x1024/closing.html" target="_self" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="287,730,323,758" href="pg05.html" target="_self" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="44,729,89,760" href="#" onFocus="if(this.blur)this.blur()" onClick="MM_openBrWindow('help01_pop.html','help','scrollbars=yes,resizable=yes,width=1030,height=780')">
+</map>
+</BODY>
+</HTML>
